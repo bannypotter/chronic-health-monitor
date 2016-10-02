@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+<html>
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/css/bootstrap-slider.css" />
+
+    <style>
+        .emoji{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Record your light bulb moment</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-xs-12"><h3>How are you feeling?</h3></div>
+            <div class="col-md-1 col-xs-1 emoji">😞</div>
+            <div class="col-md-10 col-xs-10"><input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="7" data-slider-step="1" data-slider-value="4" style="width:100%" /></div>
+            <div class="col-md-1 col-xs-1 emoji">😄</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <h3>Whats happening?</h3>
+                <textarea rows="8" style="width:100%"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <a href="#" class="btn btn-primary btn-sm">Exercise</a>
+                <a href="#" class="btn btn-primary btn-sm">Food</a>
+                <a href="#" class="btn btn-primary btn-sm">Relationships</a>
+                <a href="#" class="btn btn-primary btn-sm">Sleep</a>
+                <a href="#" class="btn btn-primary btn-sm">Other</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <button id="send" class="btn btn-primary btn-block">Send</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#" class="btn btn-primary btn-lg">Moment</a>
+                <a href="#" class="btn btn-primary btn-lg">Timeline</a>
+                <a href="#" class="btn btn-primary btn-lg">Graphs</a>
+                <a href="#" class="btn btn-danger btn-lg">SOS</a>
+            </div>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/bootstrap-slider.min.js"></script>
+    <script>
+        var mySlider = $("#ex1").bootstrapSlider();
+
+
+
+    </script>
+</body>
+</html>
